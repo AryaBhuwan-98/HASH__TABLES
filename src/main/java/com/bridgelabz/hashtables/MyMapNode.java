@@ -6,12 +6,14 @@ public class MyMapNode <K, V> {
 	V value;
 	MyMapNode<K, V> next;
 
+	// constructor name as MyMaoNode and passing key and value
 	public MyMapNode(K key, V value) {
 		this.key = key;
 		this.value = value;
 		next = null;
 	}
 
+	// method getter and setter
 	public K getKey() {
 		return key;
 	}
@@ -21,6 +23,7 @@ public class MyMapNode <K, V> {
 
 	}
 
+	// getvalue method and setvalue
 	public V getValue() {
 		return value;
 	}
@@ -37,7 +40,6 @@ public class MyMapNode <K, V> {
 		this.next = (MyMapNode<K, V>) next;
 	}
 
-	@Override
 	public String toString() {
 		StringBuilder nodeString = new StringBuilder();
 		nodeString.append("MyMapNode{" + " Key= ").append(key).append(" Value= ").append(value).append('}');
@@ -46,4 +48,4 @@ public class MyMapNode <K, V> {
 		return nodeString.toString();
 	}
 }
-
+	
